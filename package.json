@@ -1,0 +1,25 @@
+{
+  "name": "aws-lex-helpers",
+  "version": "1.0.0",
+  "description": "AWS Lex helper classes and functions to build responses",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/asanka-x/aws-lex-helpers.git"
+  },
+  "keywords": [
+    "AWS",
+    "Lex",
+    "Bot",
+    "Helpers"
+  ],
+  "author": "Asanka Nissanka",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/asanka-x/aws-lex-helpers/issues"
+  },
+  "homepage": "https://github.com/asanka-x/aws-lex-helpers#readme"
+}
