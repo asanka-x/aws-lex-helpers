@@ -1,5 +1,5 @@
-var assert = require('assert');
-var LexHelpers = require('../src/LexHelpers');
+const assert = require('assert');
+const LexHelpers = require('../src/LexHelpers');
 
 describe('Object', function() {
   describe('LexHelpers', function() {

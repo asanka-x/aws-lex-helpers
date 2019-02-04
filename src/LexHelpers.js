@@ -1,8 +1,8 @@
 'use strict';
 
 class LexHelpers {
-    static elicitSlot(sessionAttributes, intentName, slots, slotToElicit, message) {
-        return {
+    static elicitSlot(sessionAttributes, intentName, slots, slotToElicit, message,responseCard) {
+        let response = {
             sessionAttributes,
             dialogAction: {
                 type: 'ElicitSlot',
@@ -12,6 +12,24 @@ class LexHelpers {
                 message,
             },
         };
+        if (responseCard) {
+            response.dialogAction.responseCard = responseCard;
+        }
+        return response;
+    }
+
+    static elicitIntent(sessionAttributes, message,responseCard) {
+        let response = {
+            sessionAttributes,
+            dialogAction: {
+                type: 'ElicitIntent',
+                message,
+            },
+        };
+        if (responseCard) {
+            response.dialogAction.responseCard = responseCard;
+        }
+        return response;
     }
 
     static confirmIntent(sessionAttributes, intentName, slots, message) {
