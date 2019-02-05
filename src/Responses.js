@@ -1,6 +1,6 @@
 'use strict';
 
-class LexHelpers {
+class Responses {
     static elicitSlot(sessionAttributes, intentName, slots, slotToElicit, message,responseCard) {
         let response = {
             sessionAttributes,
@@ -80,4 +80,4 @@ class LexHelpers {
     }
 }
 
-module.exports = LexHelpers;
+module.exports = Responses;

@@ -1,10 +1,17 @@
 const assert = require('assert');
-const LexHelpers = require('../src/LexHelpers');
+const Responses = require('./../index').Responses;
+const AttachmentButton = require('./../index').AttachmentButton;
+const ResponseCard = require('./../index').ResponseCard;
+const ResponseCardAttachment = require('./../index').ResponseCardAttachment;
 
-describe('Object', function() {
+
+describe('LexHelpers', function() {
   describe('LexHelpers', function() {
     it('should be a type of function', function() {
-      assert.equal(typeof LexHelpers, 'function');
+      assert.equal(typeof Responses, 'function');
+      assert.equal(typeof AttachmentButton, 'function');
+      assert.equal(typeof ResponseCard, 'function');
+      assert.equal(typeof ResponseCardAttachment, 'function');
     });
   });
 });
