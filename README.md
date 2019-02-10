@@ -27,5 +27,11 @@ npm install aws-lex-helpers --save
 ```
 
 ```javascript
-const AWSLexHelpers = require('aws-lex-helpers);
+const AWSLexHelpers = require('aws-lex-helpers');
+
+const LexResponses = AWSLexHelpers.Responses;
+const LexResponseCard = AWSLexHelpers.ResponseCard;
+const LexResponseCardAttachment = AWSLexHelpers.ResponseCardAttachment;
+const LexAttachmentButton = AWSLexHelpers.AttachmentButton;
+const LexConstants = AWSLexHelpers.Constants;
 ```
