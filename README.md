@@ -34,4 +34,5 @@ const LexResponseCard = AWSLexHelpers.ResponseCard;
 const LexResponseCardAttachment = AWSLexHelpers.ResponseCardAttachment;
 const LexAttachmentButton = AWSLexHelpers.AttachmentButton;
 const LexConstants = AWSLexHelpers.Constants;
+const LexPlainTextMessage = AWSLexHelpers.PlainTextMessage;
 ```
