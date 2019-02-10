@@ -15,8 +15,8 @@ AWS Lex helper classes and functions to build responses
 
 * PlainTextMessage
 * ResponseCard
-* * ResponseCardAttachment
-* * * AttachmentButton
+  * ResponseCardAttachment
+    * AttachmentButton
 
 ## Usage ##
 
