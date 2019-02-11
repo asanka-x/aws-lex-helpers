@@ -8,10 +8,12 @@ class Responses {
                 type: 'ElicitSlot',
                 intentName,
                 slots,
-                slotToElicit,
-                message,
-            },
+                slotToElicit
+            }
         };
+        if(message){
+            response.dialogAction.message = message;
+        }
         if (responseCard) {
             response.dialogAction.responseCard = responseCard;
         }
@@ -22,10 +24,12 @@ class Responses {
         let response = {
             sessionAttributes,
             dialogAction: {
-                type: 'ElicitIntent',
-                message,
-            },
+                type: 'ElicitIntent'
+            }
         };
+        if(message){
+            response.dialogAction.message = message;
+        }
         if (responseCard) {
             response.dialogAction.responseCard = responseCard;
         }
