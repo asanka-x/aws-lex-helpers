@@ -36,3 +36,44 @@ const LexAttachmentButton = AWSLexHelpers.AttachmentButton;
 const LexConstants = AWSLexHelpers.Constants;
 const LexPlainTextMessage = AWSLexHelpers.PlainTextMessage;
 ```
+
+### Plain Text Message ###
+
+```javascript
+let plainTextMessage = new LexPlainTextMessage()
+                .setMessage('hey there this is a plain text message')
+                .build();
+```
+
+### Response Card ###
+
+```javascript
+let firstAttachmentButton = new LexAttachmentButton()
+        .setText('First Button')
+        .setValue('first button')
+        .build();
+let secondAttachmentButton = new LexAttachmentButton()
+        .setText('Second Button')
+        .setValue('second button')
+        .build();
+let responseCardAttachment = new LexResponseCardAttachment()
+        .setTitle('Attachment Title')
+        .setSubTitle('Attachment subtitle')
+        .setImageUrl('<IMAGE_URL>') // Hosted url of the image
+        .setAttachmentLinkUrl('<LINK_URL>') // URL to be opened once click on the image
+        .setButtons([firstAttachmentButton, secondAttachmentButton])
+        .build();
+let responseCard = new LexResponseCard()
+        .setGenericAttachments([responseCardAttachment]) // Response card attachments can be provided as an array
+        .build();
+```
+
+### Constants ###
+
+* FULFILMENT_STATES
+  * FULFILLED
+  * FAILED
+
+* INVOCATION_SOURCE
+  * DIALOG_CODE_HOOK
+  * FULFILMENT_CODE_HOOK
