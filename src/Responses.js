@@ -36,8 +36,8 @@ class Responses {
         return response;
     }
 
-    static confirmIntent(sessionAttributes, intentName, slots, message) {
-        return {
+    static confirmIntent(sessionAttributes, intentName, slots, message,responseCard) {
+        let response = {
             sessionAttributes,
             dialogAction: {
                 type: 'ConfirmIntent',
@@ -46,6 +46,11 @@ class Responses {
                 message,
             },
         };
+
+        if (responseCard) {
+            response.dialogAction.responseCard = responseCard;
+        }
+        return response;
     }
 
     static close(sessionAttributes, fulfillmentState, message, responseCard) {
