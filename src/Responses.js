@@ -80,11 +80,11 @@ class Responses {
 
     // ---------------- Helper Functions --------------------------------------------------
 
-    static buildValidationResult(isValid, violatedSlot, messageContent) {
+    static buildValidationResult(isValid, violatedSlot, message) {
         return {
             isValid,
             violatedSlot,
-            message: { contentType: 'PlainText', content: messageContent },
+            message,
         };
     }
 }
