@@ -1,6 +1,6 @@
 {
   "name": "aws-lex-helpers",
-  "version": "0.9.0",
+  "version": "0.9.1",
   "description": "AWS Lex helper classes and functions to build responses",
   "main": "index.js",
   "scripts": {
