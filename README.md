@@ -26,7 +26,7 @@ AWS Lex helper classes and functions to build responses
 npm install aws-lex-helpers --save
 ```
 
-### Initialize ###
+### Initialization ###
 
 ```javascript
 const AWSLexHelpers = require('aws-lex-helpers');
