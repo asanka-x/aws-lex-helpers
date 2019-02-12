@@ -1,5 +1,9 @@
 # AWS Lex Helpers
 
+[![npm version](https://badge.fury.io/js/aws-lex-helpers.svg)](https://badge.fury.io/js/aws-lex-helpers)
+[![Build Status](https://travis-ci.org/asanka-x/aws-lex-helpers.svg?branch=master)](https://travis-ci.org/asanka-x/aws-lex-helpers)
+
+
 AWS Lex helper classes and functions to build responses
 
 
