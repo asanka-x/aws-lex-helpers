@@ -26,6 +26,8 @@ AWS Lex helper classes and functions to build responses
 npm install aws-lex-helpers --save
 ```
 
+### Initialize ###
+
 ```javascript
 const AWSLexHelpers = require('aws-lex-helpers');
 
@@ -52,10 +54,12 @@ let firstAttachmentButton = new LexAttachmentButton()
         .setText('First Button')
         .setValue('first button')
         .build();
+
 let secondAttachmentButton = new LexAttachmentButton()
         .setText('Second Button')
         .setValue('second button')
         .build();
+
 let responseCardAttachment = new LexResponseCardAttachment()
         .setTitle('Attachment Title')
         .setSubTitle('Attachment subtitle')
@@ -63,6 +67,7 @@ let responseCardAttachment = new LexResponseCardAttachment()
         .setAttachmentLinkUrl('<LINK_URL>') // URL to be opened once click on the image
         .setButtons([firstAttachmentButton, secondAttachmentButton])
         .build();
+        
 let responseCard = new LexResponseCard()
         .setGenericAttachments([responseCardAttachment]) // Response card attachments can be provided as an array
         .build();
